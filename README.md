@@ -60,4 +60,6 @@ The following badge numbers are treated as revoked by default:
 
 ---
 
-This project is being used just as a test to familiarize with GitHub Desktop.
+This project is being used just as a test and familiarize with GitHub Desktop.
+
+(Edit1) Keep local repository in sync with remote
