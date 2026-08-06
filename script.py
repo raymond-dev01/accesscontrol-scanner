@@ -13,6 +13,40 @@
 #    - Sort both lists alphabetically.
 #    - Display the total number of approved and denied visitors.
 
-name = input("Enter name: ")
+rev_badges = {'X1111','C2222','Z3333','F4444'}
+approved = []
+denied = []
 
-print(f"Hello, {name}!")
+while True:
+    visitor_name = input('Enter your name: ')
+    
+    if visitor_name.lower() == 'done':
+        break
+    
+    ask_badge = input('What is your badge number? ').strip().upper()
+    
+    if ask_badge in rev_badges:
+        denied.append(visitor_name)
+        print('ACCESS DENIED')
+        
+    
+    else:
+        ask_badge not in rev_badges
+        approved.append(visitor_name)
+        print('ACCESS GRANTED')
+        
+
+approved.sort()
+denied.sort()
+  
+print('=====ACCESS SUMMARY=====')
+print(":white_check_mark: Approved Visitors") 
+for person in sorted(approved):
+  print(f" - {person}")
+
+print("⛔️ Denied Visitors")
+for person in sorted(denied):
+  print(f" - {person}")
+
+print(f'The total number of approved visitors are: {len(approved)}')
+print(f'The total number of denied visitors are: {len(denied)}')
