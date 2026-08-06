@@ -56,6 +56,5 @@ print(f'The total number of denied visitors are: {len(denied)}')
 message = "This is a test for source control in VS Code"
 print(message)
 
-print("Test 2")
-
-print("Test 3")
+message2 = "This is a test2 for source control in VS Code"
+print(message2)
