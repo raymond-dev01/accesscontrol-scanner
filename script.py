@@ -50,3 +50,7 @@ for person in sorted(denied):
 
 print(f'The total number of approved visitors are: {len(approved)}')
 print(f'The total number of denied visitors are: {len(denied)}')
+
+
+#Source Control Testing in VS Code
+print("This is a test for source control in VS Code")
