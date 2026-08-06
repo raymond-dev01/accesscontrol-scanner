@@ -53,4 +53,5 @@ print(f'The total number of denied visitors are: {len(denied)}')
 
 
 #Source Control Testing in VS Code
-print("This is a test for source control in VS Code")
+message = "This is a test for source control in VS Code"
+print(message)
